@@ -72,31 +72,41 @@ const Detail = () => {
             <Stack direction={["column", "row"]} spacing="25%">
               <Box marginRight={10} justifyContent="space-between">
                 <Text>
-                  <Text as="b">Native name:</Text> {country.nativeName}
+                  <Text as="b">Native name:</Text>{" "}
+                  {country.nativeName || "Not available"}
                 </Text>
                 <Text>
-                  <Text as="b">Population:</Text> {country.population}
+                  <Text as="b">Population:</Text>{" "}
+                  {country.population || "Not available"}
                 </Text>
                 <Text>
-                  <Text as="b">Region: </Text> {country.region}
+                  <Text as="b">Region: </Text>{" "}
+                  {country.region || "Not available"}
                 </Text>
                 <Text>
-                  <Text as="b">Sub Region:</Text> {country.subregion}
+                  <Text as="b">Sub Region:</Text>{" "}
+                  {country.subregion || "Not available"}
                 </Text>
                 <Text>
-                  <Text as="b">Capital:</Text> {country.capital}
+                  <Text as="b">Capital:</Text>{" "}
+                  {country.capital || "Not available"}
                 </Text>
               </Box>
               <Box>
                 <Text>
-                  <Text as="b">Top Level Domain:</Text> {country.topLevelDomain}
+                  <Text as="b">Top Level Domain:</Text>{" "}
+                  {country.topLevelDomain || "Not available"}
                 </Text>
                 <Text>
-                  <Text as="b">Currency:</Text> {country.currencies[0].name}
+                  <Text as="b">Currency:</Text>{" "}
+                  {country.currencies && country.currencies.length > 0
+                    ? country.currencies[0].name
+                    : "Not available"}
                 </Text>
                 <Text>
                   <Text as="b">Languages:</Text>{" "}
-                  {country.languages.map((lang) => lang.name).join(", ")}
+                  {country.languages.map((lang) => lang.name).join(", ") ||
+                    "Not available"}
                 </Text>
               </Box>
             </Stack>
