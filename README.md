@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My solution]([https://your-solution-url.com](https://github.com/Tam-BobManuel/Countries-api))
+- Live Site URL: [Live solution]([https://your-live-site-url.com](https://countries-api-nine-orpin.vercel.app/))
 
 ## My process
 
